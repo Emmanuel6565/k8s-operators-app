@@ -9,7 +9,7 @@ pipeline {
             spec:
               containers:
                 - name: maven
-                  image: maven:alpine
+                  image: maven:3.6.3-jdk-11
                   command:
                   - cat
                   tty: true
