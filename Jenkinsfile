@@ -18,9 +18,6 @@ pipeline {
         }
     }
     stages {
-        stage("Checkout SCM") {
-            checkout SCM
-        }
         stage("build and package app") {
             steps {
                 container('maven') {
