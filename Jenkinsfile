@@ -21,7 +21,7 @@ pipeline {
         stage("build and package app") {
             steps {
                 container('maven') {
-                    sh "./mvnw clean compile"
+                    sh "./mvnw compile"
                     sh "./mvnw package -DskipTests"
                 }
             }
