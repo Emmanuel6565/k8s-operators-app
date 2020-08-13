@@ -22,7 +22,7 @@ pipeline {
             steps {
                 container('maven') {
                     sh "./mvnw compile"
-                    sh "./mvnw package -DskipTests"
+                    //sh "./mvnw package -DskipTests"
                 }
             }
         }
