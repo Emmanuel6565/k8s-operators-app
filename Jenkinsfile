@@ -21,8 +21,7 @@ pipeline {
         stage("build and package app") {
             steps {
                 container('maven') {
-                    sh "java -v"
-                    //sh "./mvnw package -DskipTests"
+                    sh "mvn test"
                 }
             }
         }
